@@ -1,6 +1,6 @@
-import in_out as i_o
-import operation as oper
-import my_test as test
+import berger_functions.in_out as i_o
+import berger_functions.operation as oper
+import berger_functions.my_test as test
 
 
 for file_name in i_o.get_name():

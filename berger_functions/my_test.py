@@ -1,4 +1,4 @@
-import in_out as i_o
+import berger_functions.in_out as i_o
 
 # checking results in table. Return 'True' if all results are 1-0, 0-1 or draw.
 def validation(chess_table):
