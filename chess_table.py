@@ -1,6 +1,6 @@
-import valar.huyulis.in_out as i_o
-import valar.huyulis.operation as oper
-import valar.huyulis.tests_by_goshka as test
+import in_out as i_o
+import operation as oper
+import my_test as test
 
 
 for file_name in i_o.get_name():
@@ -10,6 +10,7 @@ for file_name in i_o.get_name():
         print('Данные таблицы корректны')
     else:
         print('Данные таблицы некорректны. Проверьте правильность результатов.')
+        continue
     table_conv = oper.converter(new_table)
     i_o.write_cvs(table_conv)
     if test.proof(file_name):
